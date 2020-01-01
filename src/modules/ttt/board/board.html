@@ -1,0 +1,19 @@
+<template>
+    <div class="board-row">
+        <ttt-square idx="0" onclick={handleSquareClick}></ttt-square>
+        <ttt-square idx="1" onclick={handleSquareClick}></ttt-square>
+        <ttt-square idx="2" onclick={handleSquareClick}></ttt-square>
+    </div>
+    <div class="board-row">
+        <ttt-square idx="3" onclick={handleSquareClick}></ttt-square>
+        <ttt-square idx="4" onclick={handleSquareClick}></ttt-square>
+        <ttt-square idx="5" onclick={handleSquareClick}></ttt-square>
+    </div>
+    <div class="board-row">
+        <ttt-square idx="6" onclick={handleSquareClick}></ttt-square>
+        <ttt-square idx="7" onclick={handleSquareClick}></ttt-square>
+        <ttt-square idx="8" onclick={handleSquareClick}></ttt-square>
+    </div>
+    <p>{status}</p>
+    <ttt-select-symbol symbol={game.userSymbol} onsymbolchange={handleSymbolChange}></ttt-select-symbol>
+</template>

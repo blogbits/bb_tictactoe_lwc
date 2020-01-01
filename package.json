@@ -1,0 +1,48 @@
+{
+    "name": "bb_tictactoe_lwc",
+    "version": "0.0.0",
+    "author": "kleencut",
+    "dependencies": {
+        "lwc-services": "^1.2.2"
+    },
+    "devDependencies": {
+        "husky": "^2.7.0",
+        "lint-staged": "^8.2.1"
+    },
+    "engines": {
+        "node": ">=10.0.0"
+    },
+    "homepage": "https://github.com//",
+    "husky": {
+        "hooks": {}
+    },
+    "keywords": [
+        "lwc"
+    ],
+    "license": "MIT",
+    "lint-staged": {
+        "**/*.{css,html,js,json,md,yaml,yml}": [
+            "prettier --write"
+        ],
+        "**/modules/**/*.js": [
+            "eslint"
+        ],
+        "*": [
+            "git add"
+        ]
+    },
+    "repository": "/",
+    "scripts": {
+        "build": "lwc-services build -m production",
+        "build:development": "lwc-services build",
+        "lint": "eslint ./src/**/*.js",
+        "prettier": "prettier --write '**/*.{css,html,js,json,md,yaml,yml}'",
+        "prettier:verify": "prettier --list-different '**/*.{css,html,js,json,md,yaml,yml}'",
+        "serve": "lwc-services serve",
+        "test:unit": "lwc-services test",
+        "test:unit:coverage": "lwc-services test --coverage",
+        "test:unit:debug": "lwc-services test --debug",
+        "test:unit:watch": "lwc-services test --watch",
+        "watch": "lwc-services watch"
+    }
+}

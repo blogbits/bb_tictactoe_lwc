@@ -2,7 +2,7 @@
 
 Implementation of TicTacToe game using the Salesforce open source library Lightning Web Components (LWC)
 
-A blog discussion available at [https://https://www.kleencut.net/blog/sf-lwc-ttt](https://https://www.kleencut.net/blog/sf-lwc-ttt)
+A blog discussion available at [https://www.kleencut.net/blog/sf-lwc-ttt](https://www.kleencut.net/blog/sf-lwc-ttt)
 
 See [https://lwc.dev/](https://lwc.dev/) for more information about LWC
 
